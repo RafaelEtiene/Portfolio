@@ -13,36 +13,48 @@
     <ul id="nav-items">
       <li><a href="index.html">Home</a></li>
       <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="#">Formação</a></li>
-      <li><a href="#">Portfólio</a></li>
-      <li><a href="#">Contato</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
     </ul>
   </nav>
 
-  <article id="sobre">
-    <div class="resumo">
-      <h3 class="title">Alguém que acredita no aperfeiçoamento constante</h3>
-      <p class="text">
-        Iniciei minha jornada na programação à partir do interesse já existente por tecnologia desde muito pequeno através dos jogos, programas e afins. 
-        <br>
-        Tenho total foco em inovação e aperfeiçoamento, sempre me esforçando para ficar antenado à respeito das novas tecnologias e ferramentas do mercado.
-        <br>
-        Atualmente trabalho na sustentação de sistemas, onde crio novas features, trato incidentes e bugs diversos sempre prezando pela agilidade, praticidade e empatia para como os
-        usuários.
-      </p>
+  <main>
+    <div id="sobre">
+      <section class="left">
+        <article id="resumo">
+          <h3 class="title">Alguém que acredita no aperfeiçoamento constante</h3>
+          <p class="text">
+            Iniciei minha jornada na programação à partir do interesse já existente por tecnologia desde muito pequeno através dos jogos, programas e afins. 
+            <br>
+            Tenho total foco em inovação e aperfeiçoamento, sempre me esforçando para ficar antenado à respeito das novas tecnologias e ferramentas do mercado.
+            <br>
+            Atualmente trabalho na sustentação de sistemas, onde crio novas features, trato incidentes e bugs diversos sempre prezando pela agilidade, praticidade e empatia para como os
+            usuários.
+          </p>
+      
+          <h3 class="title">Skills</h3>
+          <ul id="skill-items">
+            <li>.NET</li>
+            <li>Angular</li>
+            <li>React</li>
+            <li>MySQL</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+          </ul>
+        </article>
+      </section>
+  
+      <section class="right">
+        <picture>
+          <source media="(min-width: 200px )" srcset="images\dev-activity.svg">
+          <img id="dev-sobre" src="images\dev-activity.svg" alt="dev">
+        </picture>
+      </section>
     </div>
-
-    <div class="skills">
-      <h3 class="title">Skills</h3>
-      <ul id="skill-items">
-        <li>.NET</li>
-        <li>Angular</li>
-        <li>React</li>
-        <li>MySQL</li>
-        <li>Bootstrap</li>
-        <li>Git</li>
-      </ul>
-    </div>
-  </article>
-</body>
+  </main>
+  <footer id="footer">
+    <p>&copy; 2023 by Rafael</p>
+  </footer>
+  </body>
 </html>

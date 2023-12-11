@@ -8,6 +8,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima da viewport */
+  margin: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -43,9 +50,13 @@ nav {
   }
 }
 
+.title {
+  color: #44d62c;
+}
+
 #header {
+  flex: 1;
   padding: 6% 0 0 2%;
-  margin: auto;
   font-family: 'Roboto Mono', monospace;
   .text1 {
     color: #ffff;
@@ -69,24 +80,68 @@ nav {
   }
 }
 
-#sobre {
-  padding: 6% 0 0 2%;
-  font-family: 'Roboto Mono', monospace;
+footer {
   color: white;
-  .title {
-    color: #44d62c;
-  }
-  .resumo{
-    .text {
-      padding-top: 2%;
-      max-width: 600px; /* Defina o valor máximo desejado para a largura */
-      line-height: 1.8rem;
+  text-align: start;
+  font-weight: 100;
+  padding: 1.4px;
+}
+
+main {
+  flex:1;
+}
+#sobre{
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .left {
+    padding-left: 1.4%;
+    #resumo {
+      font-family: 'Roboto Mono', monospace;
+      color: white;
+      padding: 0 0 0 2%;
+        .text {
+          padding: 1.5% 0 2% 1.2%;
+          max-width: 600px; /* Defina o valor máximo desejado para a largura */
+          line-height: 1.8rem;
+        }
+    
+      #skill-items {
+        font-size: 1.4rem;
+        padding: 1.5% 0 0 1.2%;
+        list-style-type: none;
+      }
     }
   }
-
-  .skills {
-    padding-top: 2%;
-
-      background-color: yellow;
+  .right {
+    padding-right: 14%;
+    #dev-sobre {
+      width: 120%;
+    }
   }
 }
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 4% 0 0 2%;
+  font-size: 1.7rem;
+
+  .contatos {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contatos a {
+    color: #ffff;
+    text-decoration: none;
+  }
+}
+
+ 
