@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   background-color: black;
-  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -19,6 +18,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding-top: 1%;
+  font-family: 'Roboto', sans-serif;
 
   .logo {
     color: rgb(102, 102, 102);
@@ -52,12 +52,15 @@ nav {
 
 .title {
   color: #44d62c;
+  font-size: 1.2rem;
+  font-family: 'Roboto Mono', monospace;
+
 }
 
 #header {
   flex: 1;
   padding: 6% 0 0 2%;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;
   .text1 {
     color: #ffff;
   }
@@ -90,15 +93,17 @@ footer {
 main {
   flex:1;
 }
+
 #sobre{
   padding-top: 5%;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   .left {
     padding-left: 1.4%;
     #resumo {
-      font-family: 'Roboto Mono', monospace;
+      font-family: 'Roboto', sans-serif;
       color: white;
       padding: 0 0 0 2%;
         .text {
@@ -130,6 +135,8 @@ main {
   flex: 1;
   padding: 4% 0 0 2%;
   font-size: 1.7rem;
+  font-family: 'Roboto Mono', monospace;
+
 
   .contatos {
     padding-top: 2%;
@@ -140,8 +147,72 @@ main {
   }
   .contatos a {
     color: #ffff;
+    padding-top: 5%;
     text-decoration: none;
   }
+
+  .contatos a:hover {
+    color: #44d62c;
+    transition: width 0.3s ease;
+  }
 }
+
+.projects {
+  font-family: 'Roboto Mono', monospace;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  #project {
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #project p {
+    text-align: center;
+    padding-bottom: 2%;
+    color: rgb(84, 0, 168);
+  }
+  #project img {
+    width: 50rem;
+  }
+  #project span {
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+  }
+
+  #project span a {
+    font-family: 'Roboto', sans-serif;
+    color: #afafaf;
+  }
+
+  #project span a:hover {
+    color: #44d62c;
+  }
+}
+
+.formacao{
+  padding: 5% 0 0 2%;
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  text-align: start;
+}
+#formacoes {
+  font-family: 'Roboto', sans-serif;
+  padding: 3% 0 0 1%;
+}
+#formacoes p {
+  font-size: 2rem;
+}
+#formacoes span {
+  font-size: 1rem;
+  color: #949494;
+}
+
 
  
